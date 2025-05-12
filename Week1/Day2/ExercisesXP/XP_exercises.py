@@ -112,6 +112,13 @@ print("\n")
 # If not, print:
 # "You chose a new fruit. I hope you enjoy it!"
 
+favorite_fruits_input = input("Enter your favorite fruits (separated by spaces): \n")
+favorite_fruits = [fruit.lower() for fruit in favorite_fruits_input.split()]
+chosen_fruit = input("Enter the name of any fruit: ").lower()
+if chosen_fruit in favorite_fruits:
+    print("You chose one of your favorite fruits! Enjoy!")
+else:
+    print("You chose a new fruit. I hope you enjoy it!")
 
 print("\n")
 
@@ -123,7 +130,18 @@ print("\n")
 # After exiting the loop, print all the toppings and the total cost of the pizza.
 # The base price is $10, and each topping adds $2.50.
 
-
+toppings = []
+while True:
+    topping = input("Enter a pizza topping (or type 'quit' to finish): \t")
+    if topping.lower() == 'quit':
+        break    
+    print("Adding "+ topping + " to your pizza.")
+    toppings.append(topping)
+cost = 10 + 2.5 * len(toppings)
+print("\nYour pizza will have the following toppings:")
+for t in toppings:
+    print(f"- {t}")
+print(f"Total cost: ${cost:.2f}")
 
 print("\n")
 
@@ -142,7 +160,20 @@ print("\n")
 # Remove anyone who isn’t allowed to watch.
 # Print the final list of attendees.
 
-
+total_tickets_cost = 0
+while True:
+    age_input = input("Enter the person's age (or type 'done' to finish): ")
+    if age_input.lower() == 'done':
+        break
+    age = int(age_input)
+    if age < 3:
+        cost = 0
+    elif 3 <= age <= 12:
+        cost = 10
+    else:
+        cost = 15
+    total_tickets_cost += cost
+print(f"The Total ticket cost is: ${total_tickets_cost}")
 
 print("\n")
 
@@ -154,3 +185,13 @@ print("\n")
 # Print a message for each sandwich made, such as: "I made your Tuna sandwich."
 # Print the final list of all finished sandwiches.
 
+sandwich_orders = ["Tuna", "Pastrami", "Avocado", "Pastrami", "Egg", "Chicken", "Pastrami"]
+while "Pastrami" in sandwich_orders:
+    sandwich_orders.remove("Pastrami")
+print(sandwich_orders)
+finished_sandwiches=[]
+for sandwich in sandwich_orders:
+    finished_sandwiches.append(sandwich)
+    print("I made your "+sandwich+" sandwich.")
+print("\nFinal list of all finished_sandwiches:")
+print(finished_sandwiches)
