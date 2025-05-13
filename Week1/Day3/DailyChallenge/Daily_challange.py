@@ -17,25 +17,34 @@ for index, letter in enumerate(user_word):
     else:
         letter_indices[letter] = [index]
 
-print("Letter Index Dictionary:\n", letter_indices)
+print("\nLetter Index Dictionary:\n", letter_indices)
 print("\n")
 
 
 # Challenge 2: Affordable Items
 # Goal: Create a program that prints a list of items that can be purchased with a given amount of money.
-
-# 1. Store Data:
-# You will be provided with a dictionary (items_purchase) where the keys are the item names and the values are their prices (as strings with a dollar sign).
-# You will also be given a string (wallet) representing the amount of money you have.
-# 2. Data Cleaning:
-# 3. Determining Affordable Items:
+# 1. Store Data
+# 2. Data Cleaning
+# 3. Determining Affordable Items
 # 4. Sorting and Output:
 # Sort the list of affordable items in alphabetical order.
 # If the list is empty (no items can be afforded), return the string “Nothing”.
 # Otherwise, return the sorted list.
-# 5. Examples:
-# Given:
-# items_purchase = {"Water": "$1", "Bread": "$3", "TV": "$1,000", "Fertilizer": "$20"}
-# wallet = "$300"
-# The output should be: ["Bread", "Fertilizer", "Water"].
 
+items_purchase = {"Water": "$1", "Bread": "$3", "TV": "$1,000", "Fertilizer": "$20"}
+wallet = "$300"
+
+# remove $ and commas and convert to integer
+wallet_amount = int(wallet.replace("$", "").replace(",", ""))
+
+affordable_items = []
+for item, price in items_purchase.items():
+    item_price = int(price.replace("$", "").replace(",", ""))
+    if item_price <= wallet_amount:
+        affordable_items.append(item)
+
+affordable_items.sort()
+if not affordable_items:
+    print("Nothing")
+else:
+    print(affordable_items)
