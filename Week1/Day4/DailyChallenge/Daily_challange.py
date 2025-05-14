@@ -49,22 +49,38 @@ num_rows = len(matrix)
 for col in range(num_cols):
     for row in range(num_rows):
         decoded_chars.append(matrix[row][col])
-# Replacing non-alpha (between letters only) with a space
-final_message = ''
-i = 0
-while i < len(decoded_chars):
-    char = decoded_chars[i]
-    if char.isalpha(): #built in method to check if a character is alpha (letter)
-        final_message += char
-        i += 1
-    else:
-        j = i
-        symbol_chunk = ''
-        while j < len(decoded_chars) and not decoded_chars[j].isalpha():
-            symbol_chunk += decoded_chars[j]
-            j += 1
-        # If surrounded by letters, replace with a space
-        if i > 0 and j < len(decoded_chars) and decoded_chars[i-1].isalpha() and decoded_chars[j].isalpha():
-            final_message += ' '
-        i = j
+
+# --- Decoding  Functions ---
+def collect_non_alpha_chunk(chars, start_index):
+    """Collect consecutive non-alpha characters starting from a given index."""
+    j = start_index
+    while j < len(chars) and not chars[j].isalpha():
+        j += 1
+    return j
+
+def should_insert_space(chars, i, j):
+    """Check if a space should be inserted between two alphabet characters."""
+    return (
+        i > 0
+        and j < len(chars)
+        and chars[i - 1].isalpha()
+        and chars[j].isalpha()
+    )
+
+def decode_message(chars):
+    """Decode the character list into a message, inserting spaces where needed."""
+    message = ''
+    i = 0
+    while i < len(chars):
+        if chars[i].isalpha():
+            message += chars[i]
+            i += 1
+        else:
+            j = collect_non_alpha_chunk(chars, i)
+            if should_insert_space(chars, i, j):
+                message += ' '
+            i = j
+    return message
+
+final_message = decode_message(decoded_chars)
 print(final_message)
