@@ -1,0 +1,11 @@
+URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week1/Day3/ExercisesXP/XP_exercises.py
+suggestions for improvement:
+- In Exercise 2, the family dictionary keys are inconsistently capitalized. Maintain a consistent style (e.g., all lowercase or title case) for better readability.  Consider adding input validation to handle potential errors (e.g., non-numeric age input).
+- In Exercise 3, the solution directly modifies the original `brand` dictionary.  For better practice, consider creating a copy to avoid unintended side effects if the original dictionary is needed elsewhere in a larger program.  Also the code doesn't handle the case where 'international_competitors' key is missing.  Add a check.
+- In Exercise 4, while the code correctly produces the desired dictionaries, adding comments to explain the use of dictionary comprehension would improve readability.
+Brief justification:
+- correctness: The code correctly implements all four exercises. Exercise 1 uses `zip` effectively. Exercise 2 accurately calculates the total ticket cost based on age. Exercise 3 manipulates the dictionary as instructed, although it could be improved by creating a copy of the dictionary and handling missing keys. Exercise 4 uses appropriate methods to create the dictionaries according to the specifications.
+- readability: The code is generally well-structured and easy to follow. However, minor inconsistencies in variable naming and a lack of comments in certain sections reduce readability slightly. The use of f-strings enhances readability in Exercise 2.
+- performance: The code's performance is efficient for the tasks involved. The algorithms used have a time complexity appropriate for the size of the data handled. No significant performance issues are present.
+- security: There are no security vulnerabilities in the provided code, as it only deals with local data and simple calculations. No external inputs or data sources are involved that could introduce security risks.
+
