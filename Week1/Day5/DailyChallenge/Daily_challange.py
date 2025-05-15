@@ -4,29 +4,38 @@
 # Use the input() function to get a string of words from the user.
 # The words will be separated by commas.
 # Step 2: Split the String
-# Step 3: Sort the List
-# Step 4: Join the Sorted List
-# Step 5: Print the Result
+# Step 3: Sort the List and Join the Sorted List
 # Print the resulting comma-separated string.
 
-# Expected Output:
-# If the input is without,hello,bag,world, the output should be bag,hello,without,world.
-
+user_input=input("Please type a single string containing a few words separated by commas:\n")
+new_string_list=user_input.split(',')
+sorted_list=sorted(new_string_list)
+result=",".join(sorted_list)
+print(result)
 
 # Challenge 2: Longest Word
-# Write a function that takes a sentence as input and returns the longest word in the sentence. If there are multiple longest words, return the first one encountered.
+# Write a function that takes a sentence as input and returns the longest word in the sentence.
+# If there are multiple longest words, return the first one encountered.
 # Characters like apostrophes, commas, and periods should be considered part of the word.
+# 
 # Define a function that takes a string (the sentence) as a parameter.
-
-
 # Step 2: Split the Sentence into Words
-# Step 3: Initialize Variables
-# Step 4: Iterate Through the Words
-# Step 5: Compare Word Lengths
-# Step 6: Return the Longest Word
+# Step 3: Initialize Variables and Iterate Through the Words
+# Step 5: Compare Word Lengths and Return the Longest Word
 
 # Expected Output:
 # longest_word("Margaret's toy is a pretty doll.") should return "Margaret's".
 # longest_word("A thing of beauty is a joy forever.") should return "forever.".
 # longest_word("Forgetfulness is by all means powerless!") should return "Forgetfulness".
 
+def longest_word(sentence):
+    words = sentence.split()
+    longest_word = ''
+    for word in words:
+        if len(word) > len(longest_word):
+            longest_word = word   
+    return longest_word
+
+print(longest_word("Margaret's toy is a pretty doll."))
+print(longest_word("A thing of beauty is a joy forever."))
+print(longest_word("Forgetfulness is by all means powerless!"))
