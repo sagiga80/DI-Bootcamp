@@ -1,0 +1,14 @@
+URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week1/Day1/ExercisesXP/XP_exercises.py
+suggestions for improvement:
+- Exercise 3: The code should handle the type error in the comparison of a string and a number. It should explicitly state the type error rather than just saying 'False'.
+- Exercise 7:  The code doesn't handle non-numeric input. It would be better to include error handling for this scenario (e.g., using a `try-except` block).
+- Exercise 8: While the code works, using `.lower()` for case-insensitive comparison is good practice.  However, a more robust solution would check if the input is actually a string before converting it to lowercase to prevent unexpected errors.
+- Exercise 9:  Similar to Exercise 7, this exercise lacks error handling for non-numeric input.  A `try-except` block would improve the robustness of the code.
+- Improve overall code style: use more descriptive variable names where appropriate. For example, instead of  `a` and `b`, use something like `number1` and `number2`.
+- Add comments explaining the purpose of certain code segments, especially for more complex logic.
+Brief justification:
+- correctness: The code correctly implements the solutions for most exercises, showing understanding of print statements, variables, mathematical operations, comparison operators, if statements, and user input (as per the chapter content).  However, there are issues with error handling and type checking that reduce the correctness score.
+- readability: The code is generally readable, but could be improved with more descriptive variable names and comments. Some exercises could benefit from more clear structuring or breaking down complex operations into smaller, manageable chunks.
+- performance: The performance of the code is efficient for the tasks involved. No significant performance bottlenecks are evident.
+- security: The code has security vulnerabilities due to lack of input validation.  User input is not properly checked to ensure it's in the expected format (integer values in Exercises 7 and 9, for example).  This makes the code vulnerable to crashes or unexpected behavior if users enter invalid data.
+
