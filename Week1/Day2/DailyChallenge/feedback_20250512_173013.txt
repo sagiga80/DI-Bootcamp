@@ -1,0 +1,11 @@
+URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week1/Day2/DailyChallenge/Daily_exercise.py
+suggestions for improvement:
+- Challenge 1: The code correctly generates the list of multiples as specified.  However, error handling for non-integer input is missing. The program should gracefully handle cases where the user enters non-numeric input.
+- Challenge 2: The code effectively removes consecutive duplicate letters.  The solution is efficient. Readability could be improved by using more descriptive variable names and potentially a more concise approach. Consider using a while loop and string building instead of a list for better performance.
+- Both challenges: Add comments explaining the purpose of each section of the code, improving readability and maintainability.
+Brief justification:
+- correctness: Challenge 1's code produces the correct output for valid inputs, aligning with the example cases provided in the chapter. Challenge 2's code also accurately removes consecutive duplicate letters as described, meeting all the example cases.  The only correctness deduction is for the lack of error handling in Challenge 1 for invalid input types. 
+- readability: The code is generally understandable. However, more descriptive variable names (e.g., instead of `input_number`, use `target_number`) would improve readability. The comments are minimal.  In Challenge 2, using a list to build the string is slightly less readable than other approaches.  The overall structure is clear though.
+- performance: The performance of both solutions is reasonably good for the problem sizes expected. The loop in both challenges iterates a manageable number of times.  For Challenge 2, using a list to build a string is slightly less efficient than using string concatenation methods directly, especially with very large strings.  But the difference is minimal for reasonable-sized inputs.
+- security: The code does not introduce any known security vulnerabilities.  No external input is used in a way that would make it vulnerable to attacks like SQL injection or cross-site scripting.  The code directly processes the user inputs without any external interactions.
+
