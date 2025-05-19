@@ -1,0 +1,18 @@
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day2/ExercisesXP/Dogs.py
+suggestions for improvement:
+- Exercise 1: The `Siamese` class is created correctly, inheriting from `Cat`, but it lacks  additional attributes or methods as suggested in the instructions.  Add a unique attribute or method to better demonstrate inheritance.
+- Exercise 1: The example code in the instructions and the solution code do not have the same structure.  The instructions show an example of several cat breeds. The solution code has only one cat class.
+- Exercise 2: The `Dog` class correctly implements the `bark()`, `run_speed()`, and `fight()` methods as specified.  The fight method's logic is clear and effective.
+- Exercise 3: This exercise is not implemented in the provided code.
+- Exercise 4: This exercise is not implemented in the provided code.
+- General: Add docstrings to all classes and methods to improve code readability and understanding. This is important for maintainability and collaboration.
+- General: Add more comprehensive testing to demonstrate the functionality of each class and method.
+Correctness: 85%
+-----
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day2/ExercisesXP/W2_D2_XP.py
+suggestions for improvement:
+- In `PetDog.play`, instead of printing the *args tuple directly, convert it to a more readable string showing dog names.  This would match the exercise's description more closely.
+- Add docstrings to all methods for better code understanding and maintainability.
+- In Exercise 4, handle the case where `check_majority` doesn't find a matching member more gracefully.  Perhaps return a boolean indicating success/failure, or raise a custom exception.
+Correctness: 95%
+-----
