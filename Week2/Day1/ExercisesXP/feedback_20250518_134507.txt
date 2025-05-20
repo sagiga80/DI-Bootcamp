@@ -1,0 +1,14 @@
+URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day1/ExercisesXP/W2D1_XP.py
+suggestions for improvement:
+- In `find_oldest_cat`, using `*args` is good for flexibility, but adding a check for an empty input would improve robustness.
+- The `Dog` class's `__init__` method prints messages; it's better to separate printing from the core logic of object creation.
+- In `Dog`, add a method to compare sizes directly instead of doing it outside the class.
+- The `Song` class is well-implemented and follows the instructions.
+- In `Zoo`, the `sort_animals` method could be made more efficient by using a dictionary comprehension or similar approach for grouping animals rather than looping.
+- Add error handling or input validation in `Zoo` methods to handle unexpected input types (e.g., non-strings for animal names).
+Brief justification:
+- correctness: All exercises correctly implement the core functionality described. The `Cat` exercise accurately finds the oldest cat. The `Dog` exercise instantiates objects, calls methods, and compares sizes. The `Song` exercise prints lyrics line by line.  The `Zoo` exercise correctly handles adding, selling, displaying, sorting, and grouping animals, with only minor efficiency considerations. There are no major deviations from the requirements.
+- readability: The code is generally readable with clear variable names and straightforward logic in most parts. However, some improvements can be made to class structure and printing statements.  The comments are helpful, but adding docstrings to functions/methods would improve readability further.
+- performance: The performance is acceptable for the given tasks. The `sort_animals` in the `Zoo` class has a potential performance issue with large datasets, as it sorts the list first and then loops again to create groups.
+- security: The code doesn't introduce any obvious security vulnerabilities. The code only deals with string inputs and does not interact with external systems or handle user-supplied data that could pose a security risk.
+
