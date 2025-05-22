@@ -1,0 +1,10 @@
+URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week1/Day5/DailyChallenge/Daily_challange.py
+suggestions for improvement:
+- Challenge 1: The code for Challenge 1 correctly sorts and prints the comma-separated words. However, it lacks error handling.  What if the user enters something unexpected, like numbers or no commas?
+- Challenge 2: The `longest_word` function in Challenge 2 has a flaw. It uses `sentence.split()` which splits on whitespace. This means punctuation is treated as separating words, not as part of them.  The problem statement explicitly says punctuation should be included.
+Brief justification:
+- correctness: Challenge 1 mostly meets the requirements; it correctly sorts and outputs the words.  Challenge 2's implementation is partially correct as it finds the longest word but does not account for punctuation correctly as specified in the instructions.  The score reflects this partial success. The omission of error handling in challenge 1 lowers the score.
+- readability: The code is well-structured, easy to follow, and uses descriptive variable names. The comments are helpful in explaining the steps. The code is well-organized making it easy to understand the logic.
+- performance: The algorithms used are efficient for the given tasks. The time complexity for sorting is O(n log n) and the loop in `longest_word` is O(n), both of which are acceptable for these problem sizes.
+- security: There are no security vulnerabilities in this code as it only performs string manipulation and sorting. No external resources or user input are used in a way that introduces security risks.
+
