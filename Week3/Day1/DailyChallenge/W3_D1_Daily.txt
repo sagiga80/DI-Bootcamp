@@ -1,0 +1,36 @@
+# A research-based presentation on a chosen real-life case where data analysis played a key role.
+# Step 1: Search for a relevant case or news story. Consider sources like business journals, news websites, or scientific publications.
+# Step 2: Analyze the role of data analysis in the chosen story. Pay attention to what data was analyzed, the methods used, and the outcomes or decisions driven by the analysis.
+# Step 3: Discuss within your group how the data analysis impacted the situation. Consider questions like: What would have been different without data analysis? How did data analysis contribute to solving a problem or making a decision?
+# Step 4: Present your findings to the class. Focus on explaining the significance of data analysis in the context of your chosen story.
+
+Case Study - Company: Agoda
+Leveraging Data Analytics for Dynamic Pricing and Operational Efficiency
+(Source Type: Business journals and company reports)
+
+Agoda employs data analytics extensively in the following areas:
+1) Dynamic Pricing Optimization
+Objective: Maximize revenue by adjusting room prices based on real-time demand, competition, and other market factors.
+Method: Implementation of advanced algorithms and machine learning models to analyze historical booking data, market trends, and competitor pricing.
+Outcome: Achieved a significant increase in revenue per available room (RevPAR) by offering personalized pricing to customers.
+2) Operational Efficiency through Data-Driven Insights
+Objective: Streamline operations and reduce costs by identifying inefficiencies and optimizing resource allocation.
+Method: Analysis of operational data, including booking patterns, customer feedback, and staff performance metrics.
+Outcome: Improved customer satisfaction scores and reduced operational costs through targeted interventions.
+
+Key Impacts:
+Revenue Growth: Enhanced pricing strategies contributed to a notable increase in overall revenue.
+Cost Reduction: Streamlined operations led to significant cost savings.
+Customer Satisfaction: Data-driven improvements in service delivery boosted customer satisfaction and loyalty.
+
+Summary:
+Agoda's strategic use of data analytics in dynamic pricing and operational optimization has been instrumental in driving business growth and enhancing customer satisfaction.
+
+Without data analysis:
+Agoda would face challenges in adapting to market changes promptly.
+Operational inefficiencies could hinder profitability and customer retention.
+
+With data analysis:
+Agoda maintains a competitive edge in the dynamic travel industry.
+Continuous improvements in operations and customer service foster long-term success.
+
