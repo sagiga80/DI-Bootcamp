@@ -1,0 +1,7 @@
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day5/DailyChallenge/W2D5_Daily.py
+suggestions for improvement:
+- The answers to Exercise 1 are good but could be more precise and detailed. For example, the answer to encapsulation should mention data hiding and access modifiers.
+- The code correctly implements a `Deck` class without inheriting from a `Card` class, fulfilling the Exercise 2 requirements. The use of list comprehensions for card creation is efficient and readable. 
+- Add error handling or a check to make sure the deck is not empty before dealing a card to avoid potential `IndexError`.
+Correctness: 90%
+-----
