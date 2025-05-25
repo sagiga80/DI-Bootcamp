@@ -1,0 +1,11 @@
+URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week1/Day3/DailyChallenge/Daily_challange.py
+suggestions for improvement:
+- Challenge 1: The code for Challenge 1 is efficient and well-structured.  Consider adding a check to handle empty input to prevent errors.
+- Challenge 2: The code for Challenge 2 is also well-structured and correctly handles the conversion of prices.  Error handling could be improved (e.g., what if the price isn't in the correct format?).  The use of `replace()` twice is slightly less efficient than a regular expression; a regex solution would be more concise but might be less readable for beginners.
+- General: Add docstrings to functions to improve readability and explain the purpose of each function. Use more descriptive variable names (e.g., `user_input` instead of `user_word`).
+Brief justification:
+- correctness: Both challenges are correctly implemented and produce the expected outputs based on the examples and descriptions in the Chapter Content/Questions.  The code accurately uses dictionaries, loops, conditional statements, string manipulation, and list operations as specified. The functions work correctly given valid inputs.
+- readability: The code is generally easy to read and understand. However, more descriptive variable names would improve clarity. The use of `enumerate` in Challenge 1 is good practice.  Adding docstrings would significantly improve readability, especially for the price conversion logic in Challenge 2.
+- performance: The performance of both solutions is acceptable for typical use cases.  In Challenge 2, using a regular expression for price cleaning could be slightly faster for large datasets, although it would likely not be noticeable with a small number of items. The algorithm scales linearly with the number of items, which is efficient.
+- security: No security vulnerabilities are present. The code only interacts with user input and does not perform any operations that could expose the system to risks.  Input validation (e.g., in Challenge 1, checking for empty input) would further improve robustness.
+

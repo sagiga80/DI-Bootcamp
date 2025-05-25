@@ -1,0 +1,17 @@
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day4/ExercisesXP/W2_D4_XP.py
+suggestions for improvement:
+- **Exercise 1:** Add error handling for the case where the 'words.txt' file is not found.  Currently, the program will crash. Consider using a `try-except` block to gracefully handle the `FileNotFoundError`. 
+- **Exercise 1:** The `get_random_sentence` function could be improved by adding a check to ensure that the word list is not empty before attempting to select words.  
+- **Exercise 1:** While the input validation in `main` checks for integer type and range, it could be more robust. Consider a loop that continues to prompt the user until valid input is given.
+- **Exercise 1:**  The code assumes 'words.txt' is in the same directory.  It would be better to either make this configurable or handle different paths.
+- **Exercise 2:** The code lacks error handling. It assumes the JSON structure is always correct.  A `try-except` block should handle potential `KeyError` exceptions if the JSON structure is different from expected.
+Correctness: 95%
+-----
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day4/ExercisesXP/modified_employee.json
+suggestions for improvement:
+- The provided code snippet only addresses Exercise 2.  Exercise 1 (random sentence generator) is completely missing.
+- Error handling is missing in Exercise 2. The code assumes the JSON structure is always correct.  Robust error handling (using `try-except` blocks) should be added to handle potential `KeyError` exceptions if the expected keys are not found.
+- The code for Exercise 2 doesn't demonstrate saving the modified JSON to a file. The instructions specify to use `json.dump()` to save to a file, but this is not present.
+- The date in Exercise 2 should be user-specified rather than hardcoded. The exercise does not specify the use of a hardcoded date.
+Correctness: 80%
+-----

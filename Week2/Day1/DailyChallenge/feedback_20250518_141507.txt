@@ -1,0 +1,10 @@
+URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day1/DailyChallenge/W2D1_Daily.py
+suggestions for improvement:
+- The `get_info` method could be slightly improved by using a more robust string formatting technique, such as f-strings or the `str.format()` method with named placeholders for better readability and maintainability when dealing with more complex outputs.
+- Adding docstrings to the methods would enhance readability and make the code easier to understand.
+Brief justification:
+- correctness: The code perfectly implements all the requirements specified in the Chapter Content/Questions.  It correctly creates the `Farm` class with the `__init__`, `add_animal`, and `get_info` methods, producing the exact output as the example.  The bonus features, `get_animal_types` and `get_short_info`, are also correctly implemented and function as described. The code adheres to the instructions regarding the use of `sorted()` for sorting animal types and string formatting for output.
+- readability: The code is well-structured and easy to follow. Variable names are descriptive, and the logic within each method is clear.  However, adding docstrings to improve readability would be beneficial and the string formatting in `get_info` could be made a bit cleaner.
+- performance: The code's performance is efficient for this task. The use of dictionaries for animal storage allows for fast lookups and updates.  The algorithm for adding and retrieving animal data is straightforward and does not involve any unnecessary computations.
+- security: There are no apparent security vulnerabilities in the provided code. It operates solely on its local data and doesn't interact with external resources or user input that could lead to security risks.
+

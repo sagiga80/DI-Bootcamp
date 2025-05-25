@@ -1,0 +1,16 @@
+URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week1/Day2/ExercisesXP/XP_exercises.py
+suggestions for improvement:
+- In Exercise 1, the instructions say to remove the *last* number added.  The code removes an arbitrary number (90).  The code should track the last added element to ensure correct removal.
+- Exercise 2 could be improved by explicitly stating that tuples are immutable and demonstrating an error when attempting direct addition.  The current solution works around the immutability, but doesn't highlight the core concept.
+- Exercise 5, part 2, could be made more efficient by iterating through only even indices instead of checking every element.
+- Exercise 7 could handle edge cases better, such as empty input or inputs with only spaces.
+- Exercise 8 lacks input validation to prevent errors if the user enters non-string data. Adding error handling would enhance robustness.
+- Exercise 9's bonus section could benefit from clearer output and improved age validation (currently, it accepts non-integer input).
+- In Exercise 10, the loop to remove "Pastrami" is inefficient (repeatedly iterates). A `while` loop is better suited but should be used carefully for performance reasons, and consider a list comprehension solution.
+- Use more descriptive variable names throughout the code for better readability.
+Brief justification:
+- correctness: Most exercises correctly implement the core logic. However, some have minor flaws as mentioned above (Exercise 1's last-number removal, Exercise 2's handling of tuple immutability, and less efficient code in Exercise 5 part 2, Exercise 10's loop).  These minor inaccuracies reduce the correctness score slightly.
+- readability: The code is generally well-structured, but some variable names could be more descriptive, making it harder to quickly understand the purpose of some variables.  Adding comments to clarify complex logic would improve readability.
+- performance: The code generally performs efficiently, except for the parts mentioned in the feedback (Exercise 5 part 2, and Exercise 10). The inefficient removal of "Pastrami" is a significant performance concern. The overall performance is good but not optimal.
+- security: The code doesn't contain any obvious security vulnerabilities. No user input is used in a way that could lead to code injection or other attacks.  The code is secure in its current context.
+
