@@ -1,0 +1,22 @@
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day5/ExercisesXP/W2_D5_XP1.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day5/ExercisesXP/anagram_checker.py
+suggestions for improvement:
+- The `anagram_checker.py` file should handle potential `FileNotFoundError` exceptions during file loading.
+- The `anagrams.py` file is missing, which is a crucial part of the assignment.  The provided code only implements the `AnagramChecker` class.
+- The performance of `get_anagrams` could be improved by pre-processing the word list to group words by their sorted letter combinations for faster lookups.
+- Add more robust input validation in `anagrams.py` to handle edge cases (e.g., empty input).
+- Improve the user interface in `anagrams.py` to be more interactive and user-friendly. Include clearer error messages.
+Correctness: 95%
+-----
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day5/ExercisesXP/anagrams.py
+suggestions for improvement:
+- Improve error handling for file loading in `AnagramChecker.__init__`.  The code doesn't handle potential `FileNotFoundError` or other I/O exceptions.
+- The `get_anagrams` method in `AnagramChecker` could be optimized for performance.  Currently, it iterates through the entire word list for each potential anagram. Consider using a more efficient data structure or algorithm (e.g., sorting letters and using a dictionary to group anagrams).
+- Add more comprehensive unit tests to verify the functionality of `AnagramChecker`'s methods.
+- Consider using a logging library instead of relying solely on `print` statements for debugging and information.
+Correctness: 95%
+-----

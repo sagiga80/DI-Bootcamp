@@ -1,0 +1,16 @@
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day5/ExercisesXP/RPS_game/game.py
+suggestions for improvement:
+- The `rock-paper-scissors.py` file is missing, which is crucial for the menu, score tracking, and overall game flow as described in the instructions.  The provided code only implements the `game.py` portion.
+- Add comprehensive docstrings to the `rock-paper-scissors.py` functions (`get_user_menu_choice`, `print_results`, `main`) to explain their purpose, parameters, and return values.
+- Improve the user experience by providing clearer instructions and visual feedback in the menu and game output. For example, use a numbered menu instead of just text.
+- Error handling could be more robust. For instance, consider what happens if the user inputs unexpected data in the menu.
+- The `results` dictionary should be initialized outside the loop in `main` to ensure data persistence between games.
+Correctness: 95%
+-----
+URL: URL: https://github.com/sagiga80/DI-Bootcamp/blob/main/Week2/Day5/ExercisesXP/RPS_game/rock-paper-scissors.py
+suggestions for improvement:
+- The `game.py` file is missing, making it impossible to assess the correctness of the Game class implementation.  The provided code only shows the user interface and score tracking.
+- Add error handling for the case where the `game.py` module might not be found.
+- Improve input validation in `get_user_menu_choice` to handle non-numeric input more gracefully (e.g., using `try-except` to catch `ValueError`).
+Correctness: 90%
+-----
